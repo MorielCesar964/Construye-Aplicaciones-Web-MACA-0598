@@ -1,0 +1,32 @@
+<!--Moriel Cesar 5-I-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formularios en HTML</title>
+<!-- Libreria de iconos en linea -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
+awesome/7.3.1/css/all.min.css">
+
+</head>
+<body>
+<!--Almacena y recolecta datos de los usuarios-->
+<form action="" method="post">
+
+Ingresa tu usuario:
+<!--Crea casillas de texto para que el usuario ingrese su nombre-->
+<input type="text" name="usuario">
+Ingresa tu contraseña:
+<!--Crea casillas de texto para que los usuarios ingresen su contraseña-->
+<input type="password" name="pass">
+<br>
+<!--Casilla que se encarga de enviar los datos y recopilarlos-->
+<input type="submit" value="enviar">
+<!--Casilla que se encarga de borrar la infromacion ingresada si el usuario lo desea-->
+<input type="reset" value="borrar">
+<!--Cierra la funcion de formulario-->
+</form>
+</body>
+</html>
