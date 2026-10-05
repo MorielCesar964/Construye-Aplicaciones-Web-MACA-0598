@@ -1,0 +1,36 @@
+<!--Moriel Cesar 5-I-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formularios en HTML</title>
+<!-- Libreria de iconos en linea -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
+awesome/7.3.1/css/all.min.css">
+
+</head>
+<body>
+<!--Funcion que se encarga de recolectar y almacenar datos-->
+<form action="" method="post">
+Ingresa tu nombre:
+<!--Casilla de texto que se encarga de almacenar el nombre del usuario-->
+<input type="text" name="nombre">
+<br>
+Ingresa tu correo:
+<!--Casilla de texto que se encarga de almacenar el correo del usuario-->
+<input type="email" name="correo">
+<br>
+Ingresa tus comentarios:
+<!--Casilla d-->
+<!--Funcion que se encarga de identificar el tipo de dato que se enviara a la base de datos-->
+<textarea name="comentarios" rows="1" cols="10"></textarea>
+<br>
+<!--Casilla de texto que se encarga de enviar la informacion recolectada del usuario-->
+<input type="submit" value="enviar">
+<!--Casilla de texto que se encarga de borrar la informacion recolectada del usuario-->
+<input type="reset" value="borrar">
+</form>
+</body>
+</html>
