@@ -1,0 +1,50 @@
+<!--Moriel Cesar 5-I-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formularios en HTML</title>
+<!-- Libreria de iconos en linea -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
+awesome/7.3.1/css/all.min.css">
+</head>
+<body>
+<!--aqui se junta y se manda toda la informacion del usuario-->
+<form action="" method="post">
+<!--cuadro para separar una parte del formulario-->
+<fieldset>
+<!--el titulo que lleva ese cuadro arriba-->
+<legend>Datos personales</legend>
+Nombre y apellido:
+<!--casilla para poner nombre y apellido-->
+<input type="text" name="nombre_apellido"><br>
+Documento valido:
+<!--boton para subir el archivo de algun documento-->
+<input type="file" name="documento"><br>
+Fecha de nacimiento:
+<!--calendario para elegir la fecha de nacimiento-->
+<input type="date" name="fecha_nacimiento">
+</fieldset>
+<!--otro cuadro para separar los datos de la escuela-->
+<fieldset>
+<!--el titulo del segundo cuadro-->
+<legend>Datos de estudio:</legend>
+Nombre de la escuela:
+<!--casilla para escribir la escuela-->
+<input type="text" name="escuela"><br>
+Certificado valido:
+<!--boton para subir el archivo del certificado-->
+<input type="file" name="certificado"><br>
+Fecha de egreso:
+<!--calendario para elegir la fecha en que salio-->
+<input type="date" name="fecha_egreso">
+</fieldset>
+<br>
+<!--boton para enviar todo con icono de avioncito-->
+<button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
+<!--boton para borrar todo con icono de botecito de basura-->
+<button type="reset">Borrar <i class="fa fa-trash"></i></button>
+</form>
+</body>
+</html>
