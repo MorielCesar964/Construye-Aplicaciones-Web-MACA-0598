@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The New York Times - Replica Simple</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 10px 20px;
+      color: #121212;
+    }
+
+    /*encabezado*/
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 8px;
+    }
+
+    .btn-blue {
+      background: #567b95;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      font-weight: bold;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .logo-container {
+      text-align: center;
+      margin: 15px 0;
+    }
+
+    .logo-container h1 {
+      font-size: 46px;
+      margin: 0;
+      font-family: 'Times New Roman', serif;
+    }
+
+    /*barra de navegacion*/
+    nav {
+      border-top: 1px solid #ccc;
+      border-bottom: 2px solid #000;
+      padding: 8px 0;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    nav select {
+      border: none;
+      font-weight: bold;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+
+    .notice {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      margin: 15px 0;
+    }
+
+    /*body*/
+    main {
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+    }
+
+    /*footer*/
+    footer {
+      border-top: 2px solid #000;
+      margin-top: 30px;
+      padding: 15px 0;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: #666;
+    }
+
+    footer a { color: #333; text-decoration: none; margin: 0 8px; }
+
+    /*boton que direcciona al formulario*/
+    .btn-redirect {
+      text-align: center;
+      padding: 20px 0;
+      background: #f9f9f9;
+      border-top: 1px solid #ccc;
+    }
+
+    .btn-redirect a {
+      background: #000;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      border-radius: 4px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="top-bar">
+      <div>
+        <button class="btn-blue">SUBSCRIBE</button>
+        <button class="btn-blue">LOG IN</button>
+      </div>
+    </div>
+
+    <div class="logo-container">
+      <h1>The New York Times</h1>
+    </div>
+  </header>
+
+  <!--navegacion (disque)-->
+  <nav>
+    <select><option>U.S.</option></select>
+    <select><option>World</option></select>
+    <select><option>Business</option></select>
+    <select><option>Arts</option></select>
+    <select><option>Lifestyle</option></select>
+    <select><option>Opinion</option></select>
+    <select><option>Cooking</option></select>
+  </nav>
+
+  <div class="notice">These top stories are <strong>free to read.</strong></div>
+
+  <!--cuerpos con la tarjeta de imagen-->
+  <main>
+    <article style="max-width: 450px; margin: 0 auto; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background-color: #fff;">
+      
+      <!-- AQUÍ ESTÁ LA IMAGEN: Solo cambia "tu_imagen.jpg" por la ruta o enlace de tu foto -->
+      <img src="bandera.JPG" alt="Noticia Banco Mundial" style="width: 100%; height: 220px; object-fit: cover; border-bottom: 1px solid #ddd; display: block;">
+
+      <!-- Contenido de la Tarjeta -->
+      <div style="padding: 20px;">
+        <h2 style="font-size: 20px; margin-top: 0; margin-bottom: 12px; color: #121212; line-height: 1.3;">
+          El Banco Mundial eleva su perspectiva de crecimiento para el PIB de México en 2026 y 2027
+        </h2>
+        
+        <p style="font-size: 14px; line-height: 1.5; color: #4a4a4a; margin-bottom: 15px;">
+          El Banco Mundial anticipa que la economía mexicana mantendrá una trayectoria gradual de recuperación que le permitirá alcanzar un crecimiento de 2.2% en el año 2028.
+        </p>
+
+        <span style="font-family: Arial, sans-serif; font-size: 11px; color: #888;">💬 12 comentarios</span>
+      </div>
+
+    </article>
+  </main>
+
+  <!--footer-->
+  <footer>
+    <a href="#">Moriel Arvilla Cesar Armando</a> |
+    <a href="#">5-I</a> |
+    <a href="#">24308051280598</a> |
+  </footer>
+
+  <!--boton pa ir al formulario pro 777-->
+  <div class="btn-redirect">
+    <a href="formulario.html">Ir al Formulario de Registro ➔</a>
+  </div>
+
+</body>
+</html>
