@@ -1,0 +1,180 @@
+<!--Moriel Cesar 5-I-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinépolis - Próximos Estrenos</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #333333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #0B1D3A;
+            color: #ffffff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+
+        /* Barra de Navegación */
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        nav a.active {
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 4px;
+        }
+
+        /* Contenido Principal */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            flex: 1;
+            width: 100%;
+        }
+
+        main h2 {
+            font-size: 22px;
+            color: #0B1D3A;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eeeeee;
+            padding-bottom: 10px;
+        }
+
+        /* Cuadrícula de Tarjetas */
+        .grid-cartelera {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        /* Estilo de Tarjeta */
+        .tarjeta {
+            border: 1px solid #dddddd;
+            border-radius: 6px;
+            padding: 15px;
+            background-color: #ffffff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Imagen de Película */
+        .tarjeta img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 4px;
+            background-color: #f4f4f4;
+            border: 1px solid #cccccc;
+            margin-bottom: 12px;
+        }
+
+        .tarjeta h3 {
+            font-size: 16px;
+            color: #0B1D3A;
+            margin-bottom: 8px;
+        }
+
+        .tarjeta p {
+            font-size: 13px;
+            color: #666666;
+        }
+
+        /* Pie de Página */
+        footer {
+            background-color: #0B1D3A;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>CINÉPOLIS</h1>
+        <nav>
+            <a href="index.html">Cartelera</a>
+            <a href="estrenos.html" class="active">Próximos Estrenos</a>
+            <a href="club.html">Club Cinépolis</a>
+            <a href="login.html">Iniciar Sesión / Registro</a>
+        </nav>
+    </header>
+
+    <!-- CUERPO / PRÓXIMOS ESTRENOS -->
+    <main>
+        <h2>Próximos Estrenos</h2>
+
+        <div class="grid-cartelera">
+
+            <div class="tarjeta">
+                <img src="doom.jpg" alt="Estreno 1">
+                <h3>Avengers Dooms Day</h3>
+                <p>Fecha de Estreno:17 Dic Próximamente</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="dune.jpg" alt="Estreno 2">
+                <h3>Dune 3</h3>
+                <p>Fecha de Estreno:17 Dic Próximamente</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="fiesta.jpg" alt="Estreno 3">
+                <h3>Fiesta Pagana</h3>
+                <p>Fecha de Estreno:6 Nov Próximamente</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="god.jpg" alt="Estreno 4">
+                <h3>Godzilla Minus Zero</h3>
+                <p>Fecha de Estreno:5 Nov Próximamente</p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p><strong>Nombre:</strong> Moriel Arvilla Cesar</p>
+        <p><strong>No. Control:</strong> 0598</p>
+        <p><strong>Grado y Grupo:</strong> 5I</p>
+    </footer>
+
+</body>
+</html>
