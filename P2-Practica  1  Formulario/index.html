@@ -1,0 +1,290 @@
+<!--Moriel Cesar 5-I-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfumeria Scent</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #FAF9F6;
+            color: #222222;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #1A1A1A;
+            color: #ffffff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #D4AF37;
+        }
+
+        header h1 {
+            font-size: 24px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        nav a {
+            color: #dddddd;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #D4AF37;
+        }
+
+        nav a.active {
+            border-bottom: 2px solid #D4AF37;
+            color: #ffffff;
+            padding-bottom: 4px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            flex: 1;
+            width: 100%;
+        }
+
+        main h2 {
+            font-size: 22px;
+            color: #1A1A1A;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #E0E0E0;
+            padding-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .grid-cartelera {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .tarjeta {
+            border: 1px solid #E5E5E5;
+            border-radius: 6px;
+            padding: 15px;
+            background-color: #ffffff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tarjeta img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 4px;
+            background-color: #F5F2EB;
+            border: 1px solid #E5E5E5;
+            margin-bottom: 12px;
+        }
+
+        .tarjeta h3 {
+            font-size: 16px;
+            color: #1A1A1A;
+            margin-bottom: 6px;
+        }
+
+        .tarjeta p {
+            font-size: 13px;
+            color: #777777;
+        }
+
+        /* Seccion Formulario */
+        .seccion-compra {
+            background-color: #ffffff;
+            border: 1px solid #E5E5E5;
+            border-radius: 6px;
+            padding: 25px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .seccion-compra h3 {
+            font-size: 18px;
+            color: #1A1A1A;
+            margin-bottom: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .campo {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .campo label {
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333333;
+        }
+
+        .campo input, .campo select {
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 14px;
+            background-color: #FAF9F6;
+        }
+
+        .campo input:focus, .campo select:focus {
+            outline: none;
+            border-color: #D4AF37;
+        }
+
+        .btn-enviar {
+            background-color: #1A1A1A;
+            color: #ffffff;
+            border: 1px solid #D4AF37;
+            padding: 12px;
+            width: 100%;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+
+        .btn-enviar:hover {
+            background-color: #D4AF37;
+            color: #1A1A1A;
+        }
+
+        footer {
+            background-color: #1A1A1A;
+            color: #cccccc;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            line-height: 1.6;
+            border-top: 1px solid #333333;
+            margin-top: 30px;
+        }
+
+        footer strong {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Perfumeria Scent</h1>
+        <nav>
+            <a href="login.html">Iniciar Sesión / Registro</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Catálogo de Fragancias</h2>
+
+        <div class="grid-cartelera">
+
+            <div class="tarjeta">
+                <img src="silver.jpg" alt="Silver Mountain Water">
+                <h3>Creed Silver Mountain Water</h3>
+                <p>Eau de Parfum / 80ml</p>
+                <p>6,500 MX</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="cos.jpg" alt="City Of Stars">
+                <h3>Lv City Of Stars</h3>
+                <p>Eau de Parfum / 100ml</p>
+                <p>8,600 MX</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="grnly.jpg" alt="Greenley">
+                <h3>PDM Greenley</h3>
+                <p>Eau de Parfum / 100ml</p>
+                <p>8,750 MX</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="rc.jpg" alt="Luna Rossa">
+                <h3>Prada Luna Rossa Carbon</h3>
+                <p>Eau de Toilette</p>
+                <p>2,690 MX</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="bbyc.jpg" alt="bbycat">
+                <h3>Yves Saint Laurent Baby Cat</h3>
+                <p>Eau de Parfum / 50ml</p>
+                <p>4,000 MX</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="gof.jpg" alt="God of fire">
+                <h3>Stephen Humbert Lucas God Of Fire</h3>
+                <p>Eau de Parfum / 50ml</p>
+                <p>5,000 MX</p>
+            </div>
+
+        </div>
+
+        <!-- Formulario de Compra -->
+        <section class="seccion-compra">
+            <h3>Realizar Pedido</h3>
+            
+            <form action="procesar.php" method="POST">
+
+                <div class="campo">
+                    <label for="fragancia">Selecciona la Fragancia:</label>
+                    <select id="fragancia" name="fragancia" required>
+                        <option value="">-- Elige un perfume --</option>
+                        <option value="perfume1">Creed-Silver Mountain Water</option>
+                        <option value="perfume2">Lv City Of Stars</option>
+                        <option value="perfume3">PDM Greenley</option>
+                        <option value="perfume4">Prada Luna Rossa Carbon</option>
+                        <option value="perfume5">Yves Saint Laurent Baby Cat</option>
+                        <option value="perfume6">Stephen Humbert Lucas God Of Fire</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="cantidad">Cantidad de perfumes a llevar:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="1" required>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Pedido a BD</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><strong>Nombre:</strong> Moriel Arvilla Cesar</p>
+        <p><strong>No. Control:</strong> 0598</p>
+        <p><strong>Grado y Grupo:</strong> 5I</p>
+    </footer>
+
+</body>
+</html>
